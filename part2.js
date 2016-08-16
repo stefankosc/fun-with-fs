@@ -20,3 +20,6 @@ function readSynchronously(path, objNode) {
 
 readSynchronously(__dirname + '/files', obj);
 console.log(obj);
+
+file = JSON.stringify(obj);
+fs.writeFile('files.json', file);
