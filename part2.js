@@ -17,9 +17,8 @@ function readSynchronously(path, objNode) {
     })
 }
 
-
 readSynchronously(__dirname + '/files', obj);
 console.log(obj);
 
-file = JSON.stringify(obj);
+file = JSON.stringify(obj, null, 4);
 fs.writeFile('files.json', file);
