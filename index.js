@@ -1,5 +1,4 @@
 var fs = require('fs');
-var events = require('events');
 
 function readEverything(path) {
 
@@ -22,4 +21,4 @@ function readEverything(path) {
     });
 }
 
-var a = readEverything(__dirname);
+var a = readEverything(__dirname + '/files');
